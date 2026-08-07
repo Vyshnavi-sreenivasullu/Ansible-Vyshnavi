@@ -1,5 +1,19 @@
 
-- name:  VARIABLES
+# - name:  VARIABLES
+#   hosts: local
+#   connection: local
+
+#   vars:
+#     COURSE: JAVA
+#     Name: VYSHNAVI
+
+#   tasks:
+#    name: course details
+#     ansible.builtin.debug:
+#       msg: " hello {{ COURSE }} ,  baggunnava {{ Name }} "
+
+---
+- name: VARIABLES
   hosts: local
   connection: local
 
@@ -8,6 +22,6 @@
     Name: VYSHNAVI
 
   tasks:
-   name: course details
-    ansible.builtin.debug:
-      msg: " hello {{ COURSE }} ,  baggunnava {{ Name }} "
+    - name: course details
+      ansible.builtin.debug:
+        msg: "hello {{ COURSE }}, baggunnava {{ Name }}"
