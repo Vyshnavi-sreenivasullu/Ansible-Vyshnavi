@@ -3,14 +3,14 @@
    hosts: local
    connection: local
 
-  vars:
-   COURSE: JAVA
-   Name: VYSHNAVI
+   vars:
+     COURSE: JAVA
+     Name: VYSHNAVI
 
-  tasks:
+   tasks:
    - name: course details
       ansible.builtin.debug:
-       msg: "hello {{ COURSE }}, baggunnava {{ Name }}"
+        msg: "hello {{ COURSE }}, baggunnava {{ Name }}"
 
 ---
 # - name: VARIABLES
