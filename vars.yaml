@@ -4,8 +4,9 @@
   connection: local
 
   vars:
-      COURSE: JAVA
-      Name: VYSHNAVI
+
+    COURSE: JAVA
+    Name: VYSHNAVI
 
   tasks:
    - name: course details
