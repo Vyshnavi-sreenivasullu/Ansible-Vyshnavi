@@ -10,8 +10,8 @@
 
   tasks:
    - name: course details
-        ansible.builtin.debug:
-         msg: "hello {{ COURSE }}, baggunnava {{ Name }}"
+     ansible.builtin.debug:
+      msg: "hello {{ COURSE }}, baggunnava {{ Name }}"
 
 ---
 # - name: VARIABLES
